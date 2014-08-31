@@ -3,7 +3,7 @@ assets/*
 protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
-themes/classic/views/
+
 
 # =========================
 # Operating System Files
@@ -17,7 +17,8 @@ themes/classic/views/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
