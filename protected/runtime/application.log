@@ -1,0 +1,1158 @@
+2014/08/30 17:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yiidemo\index-test.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiidemo/index-test.php?r=site/register
+---
+2014/08/30 17:54:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:12:09 [error] [exception.CException] exception 'CException' with message 'Property "User.title" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(145): CComponent->__get('title')
+#1 C:\wamp\www\yiidemo\protected\components\UserIdentity.php(28): CActiveRecord->__get('title')
+#2 C:\wamp\www\yiidemo\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/login
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/login
+---
+2014/08/30 18:22:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "register".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(144): CController->render('register', Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:22:33 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "register".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(144): CController->render('register', Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('Register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/Register
+---
+2014/08/30 18:24:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "register".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(145): CController->render('register', Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('Register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/Register
+---
+2014/08/30 18:27:35 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'cagline@gmail.c...')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'cagline@gmail.c...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:28:25 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'cagline@gmail.c...')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'cagline@gmail.c...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:28:29 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'cagline@gmail.c...')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'cagline@gmail.c...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:28:48 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'cagline@gmail.c...')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'cagline@gmail.c...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:29:24 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'cagline@gmail.c...')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'cagline@gmail.c...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:29:31 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('email', 'email')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(131): CActiveRecord->__set('email', 'email')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:31:00 [error] [exception.CException] exception 'CException' with message 'Property "User.joined" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(161): CComponent->__set('joined', '2014-08-30')
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(132): CActiveRecord->__set('joined', '2014-08-30')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:31:46 [error] [exception.CException] exception 'CException' with message 'RegisterForm and its behaviors do not have a method or closure named "getTableSchema".' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CUniqueValidator.php(96): RegisterForm->getTableSchema()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(213): CUniqueValidator->validateAttribute(Object(RegisterForm), 'username')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(159): CValidator->validate(Object(RegisterForm), NULL)
+#4 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(133): CModel->validate()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 18:37:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (137)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 18:37:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(137): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 19:27:52 [error] [exception.CException] exception 'CException' with message 'RegisterForm and its behaviors do not have a method or closure named "getTableSchema".' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CUniqueValidator.php(96): RegisterForm->getTableSchema()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(213): CUniqueValidator->validateAttribute(Object(RegisterForm), 'username')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(159): CValidator->validate(Object(RegisterForm), NULL)
+#4 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(134): CModel->validate()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 19:57:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 19:57:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 19:58:39 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(152): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(137): SiteController->SendRegisterVerifyEmail()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (152)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (137)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 20:10:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 20:10:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cagline' for key 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:10:57 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(153): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (153)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 20:12:25 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(153): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (153)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 20:12:50 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(153): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (153)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 20:18:37 [error] [php] include(YiiMailMessage.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\components\Controller.php(38): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\components\Controller.php (38)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (154)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+2014/08/30 20:20:49 [error] [php] Undefined property: Swift_Transport_StreamBuffer::$_sequence (C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:211)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(284): Swift_Transport_StreamBuffer->write()
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(197): Swift_SmtpTransport->executeCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(241): Swift_SmtpTransport->executeCommand()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_SmtpTransport->_doHeloCommand()
+#4 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#5 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#6 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send()
+#7 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#8 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (211)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2014/08/30 20:21:43 [error] [php] Undefined property: Swift_Transport_StreamBuffer::$_sequence (C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:211)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(284): Swift_Transport_StreamBuffer->write()
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(197): Swift_SmtpTransport->executeCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(241): Swift_SmtpTransport->executeCommand()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_SmtpTransport->_doHeloCommand()
+#4 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#5 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#6 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send()
+#7 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#8 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (211)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2014/08/30 20:23:02 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:27:51 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:29:33 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:29:46 [error] [php] fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:SSL3_GET_RECORD:wrong version number (C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send()
+#4 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2014/08/30 20:30:08 [error] [php] fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:SSL3_GET_RECORD:wrong version number (C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send()
+#4 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2014/08/30 20:30:23 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:32:15 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:32:28 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:32:57 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:35:04 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 20:36:47 [error] [php] fsockopen(): unable to connect to sll://smtp.gmail.com:465 (Unable to find the socket transport &quot;sll&quot; - did you forget to enable it when you configured PHP?) (C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send()
+#4 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): SiteController->sendMail()
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2014/08/30 20:37:34 [error] [exception.Swift_TransportException] exception 'Swift_TransportException' with message 'Failed to authenticate on SMTP server with username "cagline@gmail.com" using 2 possible authenticators' in C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\Esmtp\AuthHandler.php:179
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\EsmtpTransport.php(252): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(108): Swift_Transport_EsmtpTransport->_doHeloCommand()
+#2 C:\wamp\www\yiidemo\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_Transport_AbstractSmtpTransport->start()
+#3 C:\wamp\www\yiidemo\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 C:\wamp\www\yiidemo\protected\components\Controller.php(61): YiiMail->send(Object(YiiMailMessage))
+#5 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(154): Controller->sendMail('registerVerifyE...', 'cagline@gmail.c...', 'Register Verify...', Array, 'cagline@gmail.c...')
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->SendRegisterVerifyEmail(Object(User))
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/30 21:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "RegisterVerifyed".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('RegisterVerifye...')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('RegisterVerifye...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/RegisterVe...')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/RegisterVerifyed
+---
+2014/08/30 21:50:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registerVerifyed".' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(270): CController->missingAction('registerVerifye...')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed
+---
+2014/08/30 21:50:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed
+---
+2014/08/30 21:52:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('RegisterVerifye...')
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/RegisterVe...')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/RegisterVerifyed
+---
+2014/08/30 21:52:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed
+---
+2014/08/30 21:53:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed/8
+---
+2014/08/30 21:55:04 [error] [php] Undefined variable: newUser (C:\wamp\www\yiidemo\protected\controllers\SiteController.php:156)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&id=3002aedec23af229c6e5b88eb9b77793
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (156)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 22:02:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&id=3002aedec23af229c6e5b88eb9b77793
+---
+2014/08/30 22:14:19 [error] [php] Undefined variable: code (C:\wamp\www\yiidemo\protected\views\site\error.php:11)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(160): SiteController->render()
+#3 unknown(0): SiteController->actionRegisterVerifyed()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+in C:\wamp\www\yiidemo\protected\views\site\error.php (11)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (160)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 22:16:01 [error] [php] Undefined variable: code (C:\wamp\www\yiidemo\protected\views\site\error.php:11)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(160): SiteController->render()
+#3 unknown(0): SiteController->actionRegisterVerifyed()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+in C:\wamp\www\yiidemo\protected\views\site\error.php (11)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (160)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 22:20:51 [error] [php] Undefined variable: code (C:\wamp\www\yiidemo\protected\views\site\error.php:11)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(161): SiteController->render()
+#3 unknown(0): SiteController->actionRegisterVerifyed()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+in C:\wamp\www\yiidemo\protected\views\site\error.php (11)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (161)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/30 22:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'xxxx' in C:\wamp\www\yiidemo\protected\controllers\SiteController.php:161
+Stack trace:
+#0 [internal function]: SiteController->actionRegisterVerifyed('3002aedec23af22...')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+---
+2014/08/30 22:23:40 [error] [exception.CHttpException.ssss] exception 'CHttpException' with message 'xxxx' in C:\wamp\www\yiidemo\protected\controllers\SiteController.php:161
+Stack trace:
+#0 [internal function]: SiteController->actionRegisterVerifyed('3002aedec23af22...')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+---
+2014/08/30 22:24:29 [error] [exception.CHttpException.] exception 'CHttpException' with message 'This Registraion alrady verifyed' in C:\wamp\www\yiidemo\protected\controllers\SiteController.php:161
+Stack trace:
+#0 [internal function]: SiteController->actionRegisterVerifyed('3002aedec23af22...')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('registerVerifye...')
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registerVe...')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/registerVerifyed&token=3002aedec23af229c6e5b88eb9b77793
+---
+2014/08/31 07:33:32 [error] [exception.CException] exception 'CException' with message 'Property "RegisterForm.repeat_password" is not defined.' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(2529): CComponent->__get('repeat_password')
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(RegisterForm), 'repeat_password')
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(RegisterForm), 'repeat_password', Array)
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(RegisterForm), 'repeat_password', Array)
+#4 C:\wamp\www\yiidemo\protected\views\site\register.php(38): CActiveForm->textField(Object(RegisterForm), 'repeat_password')
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\yii...')
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\yii...', Array, true)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\yii...', Array, true)
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#9 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(149): CController->render('register', Array)
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#16 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/login
+---
+2014/08/31 07:50:20 [error] [php] mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\yiidemo\protected\controllers\SiteController.php:178)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (178)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:55:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'cagline' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'cagline' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/31 07:55:40 [error] [php] include(ii.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(169): spl_autoload_call()
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->sendRegisterVerifyEmail()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (169)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (138)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:55:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'cagline' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:55:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'cagline' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/31 07:58:33 [error] [php] include(password.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(260): RegisterForm->createValidators()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(547): RegisterForm->getValidators()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(468): RegisterForm->getSafeAttributeNames()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php(152): RegisterForm->setAttributes()
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(128): RegisterForm->__set()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (128)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:59:18 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(260): RegisterForm->createValidators()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(547): RegisterForm->getValidators()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(468): RegisterForm->getSafeAttributeNames()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php(152): RegisterForm->setAttributes()
+#6 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(128): RegisterForm->__set()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (128)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:59:22 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(260): RegisterForm->createValidators()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(304): RegisterForm->getValidators()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(1414): RegisterForm->isAttributeRequired()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\wamp\www\yiidemo\protected\views\site\register.php(21): CActiveForm->labelEx()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#11 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(149): SiteController->render()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\views\site\register.php (21)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (149)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:59:24 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(260): RegisterForm->createValidators()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(304): RegisterForm->getValidators()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(1414): RegisterForm->isAttributeRequired()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\wamp\www\yiidemo\protected\views\site\register.php(21): CActiveForm->labelEx()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#11 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(149): SiteController->render()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\views\site\register.php (21)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (149)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 07:59:48 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.15.022a51\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\validators\CValidator.php(186): import()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(287): createValidator()
+#2 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(260): RegisterForm->createValidators()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\base\CModel.php(304): RegisterForm->getValidators()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\helpers\CHtml.php(1414): RegisterForm->isAttributeRequired()
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\wamp\www\yiidemo\protected\views\site\register.php(21): CActiveForm->labelEx()
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(782): SiteController->renderPartial()
+#11 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(149): SiteController->render()
+#12 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#13 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\yiidemo\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiidemo/index.php?r=site/register
+in C:\wamp\www\yiidemo\protected\views\site\register.php (21)
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (149)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 08:20:36 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "setUpUser".' in C:\wamp\www\yii-1.1.15.022a51\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(184): CComponent->__call('setUpUser', Array)
+#1 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(184): UserIdentity->setUpUser('13')
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(138): SiteController->sendRegisterVerifyEmail(Object(User))
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/31 08:26:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 08:26:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/31 08:26:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 08:26:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
+2014/08/31 08:26:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\yiidemo\protected\controllers\SiteController.php (136)
+in C:\wamp\www\yiidemo\index.php (13)
+2014/08/31 08:26:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'calgine' pour la clef 'username'. The SQL statement executed was: INSERT INTO `dem_user` (`username`, `password`, `email`, `name`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\yii-1.1.15.022a51\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\yii-1.1.15.022a51\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\yiidemo\protected\controllers\SiteController.php(136): CActiveRecord->save()
+#3 C:\wamp\www\yii-1.1.15.022a51\framework\web\actions\CInlineAction.php(49): SiteController->actionRegister()
+#4 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.15.022a51\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(282): CController->run('register')
+#8 C:\wamp\www\yii-1.1.15.022a51\framework\web\CWebApplication.php(141): CWebApplication->runController('site/register')
+#9 C:\wamp\www\yii-1.1.15.022a51\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\yiidemo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiidemo/index.php?r=site/register
+HTTP_REFERER=http://localhost/yiidemo/index.php?r=site/register
+---
